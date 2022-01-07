@@ -1,0 +1,59 @@
+.basic__form,
+.custom__form {
+  box-sizing: border-box;
+  max-width: 30rem;
+  margin: 0 2rem;
+}
+
+.basic__form button,
+.custom__form button {
+  max-width: 10rem;
+  background: #32373c;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.125em;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.basic__form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.form__controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.custom__form input {
+  opacity: 0;
+  height: 0;
+}
+
+.custom__image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.custom__image-container label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150%;
+  cursor: pointer;
+}
+
+.custom__image-container img,
+.custom__image-container label {
+  width: 100px;
+  height: 100px;
+  border: solid 1px black;
+  border-radius: 5px;
+  object-fit: cover;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+    <title>Image input</title>
+  </head>
+  <body>
+    <form class="basic__form">
+      <h3>Basic Image Input</h3>
+      <div class="basic__form-field">
+        <label for="basic-image-input">Add image</label>
+        <input
+          type="file"
+          id="basic-image-input"
+          name="photos"
+          accept="image/jpeg"
+          multiple
+        />
+      </div>
+      <div class="form__controls"><button type="submit">Submit</button></div>
+    </form>
+    <div id="basic__print-files"></div>
+    <form class="custom__form">
+      <h3>Custom Image Input</h3>
+      <p>Add image</p>
+      <div class="custom__image-container">
+        <label id="add-img-label" for="add-single-img">+</label>
+        <input type="file" id="add-single-img" accept="image/jpeg" />
+      </div>
+      <input
+        type="file"
+        id="image-input"
+        name="photos"
+        accept="image/jpeg"
+        multiple
+      />
+      <br />
+      <div class="form__controls"><button type="submit">Submit</button></div>
+    </form>
+    <div id="custom__print-files"></div>
+  </body>
+</html>
