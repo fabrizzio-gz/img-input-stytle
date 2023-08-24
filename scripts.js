@@ -56,9 +56,6 @@ const customFormSubmitHandler = (ev) => {
 };
 
 imgInputHelper.addEventListener("change", addImgHandler);
-document
-  .querySelector(".custom__form")
-  .addEventListener("submit", customFormSubmitHandler);
-document
-  .querySelector(".basic__form")
-  .addEventListener("submit", basicFormSubmitHandler);
+
+document.querySelector(".custom__form")?.addEventListener("submit", customFormSubmitHandler);
+document.querySelector(".basic__form")?.addEventListener("submit", basicFormSubmitHandler);
