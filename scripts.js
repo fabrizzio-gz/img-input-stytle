@@ -55,7 +55,7 @@ const customFormSubmitHandler = (ev) => {
   printFiles(firstImgInput.files, container);
 };
 
-imgInputHelper.addEventListener("change", addImgHandler);
+imgInputHelper?.addEventListener("change", addImgHandler);
 
 document.querySelector(".custom__form")?.addEventListener("submit", customFormSubmitHandler);
 document.querySelector(".basic__form")?.addEventListener("submit", basicFormSubmitHandler);
